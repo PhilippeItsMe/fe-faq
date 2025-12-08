@@ -1,1 +1,130 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* -------------------- Primary set-up --------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Work Sans", sans-serif;
+}
+
+
+/* -------------------- Colors --------------------*/
+
+:root {
+    /*Primary color*/
+    --white: #FFFFFF;
+    --black: #000000;
+    --purple950: #301534;
+    --purple600: #8B6990;
+    --purple100: #F8EEFF;
+     
+    /*Secondary color*/
+    --violet600: #AD28EB;
+}
+
+
+/* -------------------- Typographie --------------------*/
+
+h1 {
+    color: var(--black);
+    font-weight: 600;
+    font-size: 56px;
+}
+
+p {
+    color: var(--purple600);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+}
+
+.question {
+    color: var(--black);
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+
+/* -------------------- Body & Main --------------------*/
+
+body {
+    height: 100vh;
+    width: 100vw;
+}
+
+main {
+    height: 100vh;
+    width: 100vw;
+}
+
+/* -------------------- Top Section --------------------*/
+
+.top {
+    background-image: url('../images/background-pattern-desktop.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30%;
+}
+
+
+/* -------------------- Bottom Section --------------------*/
+
+.bottom {
+    background-color: var(--purple100);
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.faq {
+    margin-top: -10rem;
+    margin-bottom: 3 rem;
+    background-color: var(--white);
+    border-radius: 2rem;
+    padding: 2rem;
+    width: 60%;
+}
+
+.logo-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.question-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0.5rem 0;
+    margin-top: 2rem;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+}
+
+/* -------------------- Responsivness --------------------*/
+
+@media screen and (max-width: 900px) {
+    .faq {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .faq {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .faq {
+        width: 90%;
+    }
+}
