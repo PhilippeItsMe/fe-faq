@@ -88,6 +88,7 @@ main {
     border-radius: 2rem;
     padding: 2rem;
     width: 60%;
+    max-width: 50rem;
 }
 
 .logo-wrapper {
@@ -107,7 +108,24 @@ main {
 button {
     background-color: transparent;
     border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+button img:hover {
+    cursor: pointer;
+}
+
+button:focus-visible {
+    outline: 2px solid var(--violet600);
+    border-radius: 0.5rem;
+}
+                
+.hide {             
+    display: none;
+}
+
 
 /* -------------------- Responsivness --------------------*/
 
